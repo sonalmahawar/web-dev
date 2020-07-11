@@ -47,14 +47,14 @@
 #home{
 
 
-    background-image:url(../img/img2.jpg);
+    background-image:url(./img4.jpg);
     min-height: 700px;
     background-size: cover;
-
+    
 }
 .dark-overlay{
 
-    background-color: rgba(163, 158, 158, 0.6);
+    background-color: rgba(163, 158, 158, 0.4);
     position: absolute;
     top: 0;
     left: 0;
@@ -87,60 +87,3 @@
     justify-content: center;
 }
 
-/* Who Styling*/
-
-#who .container .col-md-8{
-
-    background: url(../img/people.jpg) no-repeat;
-    background-size: cover;
-    min-height: 500px;
-
-
-}
-
-#who .container .who-content{
-
-
-    padding-top: 30px;
-    padding-left: 40px;
-
-
-}
-
-#who .container .who-content .team{
-
-    list-style: none;
-    padding-top: 20px;
-}
-
-#who .container .who-content .team li{
-
-    padding: 0.5rem;
-    border-bottom: #444 dotted 1px;
-}
-
-/* New Member Sign In Styling*/
-
-#contact .row .contact-content{
-
-
-    text-align: center;
-    background-color:coral;
-    padding: 100px;
-    border: #333 1px solid;
-}
-
-#contact .row .contact-content .contact-form h1,p{
-
-    margin-bottom: 20px;
-    color: black;
-}
-
-.text-center{
-    opacity: 0.8;
-}
-
-#contact .contact-form h2{
-
-    margin-bottom: 70px;
-}
