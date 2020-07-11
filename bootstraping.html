@@ -33,6 +33,9 @@
                     <li class="nav-item">
                         <a href="#NewSignUp " class="nav-link"><span class="text-dark">New Sign Up</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#ContactUs" class="nav-link" ><span class="text-dark">Contact Us</span></a>
+                    </li>
                     <li>
                     <form class="form-inline" action="#">
                         <input class="form-control mr-sm-2" type="text-dark" placeholder="Search for Restraunts..">
@@ -58,50 +61,79 @@
 
             </div>
         </div>
-    </header>
-    <header id="BookOnline">
     
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-
-                </div>
-                <div class="col-md-4 bookonlinecontent">
-                    <h1><span class="my-text-warning">Make A Booking</span></h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero id quia quisquam aliquid illo dicta enim eum, error temporibus? Exercitationem expedita eveniet modi nobis? Eligendi, molestiae magnam! Dolor, nihil sed?</p>
-                    <h3>Our Team</h3>
-                    <ul class="team">
-                        <li><p>Neil Mascarenhas: CEO</p></li>
-                        <li><p>Anshul Shetty: CFO</p></li>
-                        <li><p>Sonal Mahawar: Lead Accountant</p></li>
-                        <li><p>Sharon Dsouza: Investment Manager</p></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </header>
-    <header id="NewSignUp">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4 contact-form bg-primary">
-                <div class="container text-center">
-                    <div class="card-body">
-                        <h2>New Member Registration</h2>
-                        <form action="">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Phone Number">
-                            </div>
-                            <input type="submit" value="Submit" class="btn btn-outline-light btn-block">
-                        </form>
+            <div class="col-lg-4 bookonlinecontent bg-light">
+             <header id="BookOnline">
+                <h2><span class= "text-dark" >Make A Booking</span></h2>
+                <div class="card-body">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Reservation Date">
                     </div>
-
-                </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your City">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Preferred Restruant">
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Coupon Code">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="submit" value="Apply" class="btn btn-outline-light btn-block btn-danger">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Make My Reservation" class="btn btn-outline-light btn-block btn-dark" >
+            
+                </form>
             </div>
+                
+             </header>
+            </div>
+        
+            <div class="col-lg-4 contact-form bg-warning">
+                <header id="NewSignUp">
+                    <div class="container text-center">
+                        <div class="card-body">
+                            <h2><span class="text-dark">New Member Registration</span></h2>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Full name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Hotel Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Hotel Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email Address">
+                                </div>
+                                <input type="submit" value="Submit" class="btn btn-outline-light btn-block btn-dark">
+                        
+                            </form>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="col-lg-4 bg-info">
+                <header id="ContactUs">
+                    <div class="container text-center">
+                        <ul>
+                        <span class= "text-dark">Phone No: 022-222-2222</span> 
+                        </ul>
+                        <ul>
+                        <span class="text-dark"> Write to us at : www.alaoff@hotmail.com</span>
+                        </ul>
+                    </div>
         </div>
     </div>
 
