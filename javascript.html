@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="java_style.css">
+        
+
+        <script>
+            var start=1;
+            function Validate()
+            {   var email=numb.value;
+                const regex=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if(regex.test(email)==true){
+                    
+                    document.getElementById('numb').style.backgroundColor="green";
+                }
+                else{
+                    document.getElementById('numb').style.backgroundColor="red";
+                }
+                
+            }
+            function add(){
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst+snd;
+            myform.result.value=result;
+            }
+
+            function subtract() {
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst-snd;
+            myform.result.value=result;
+            }
+
+            function multiply(){
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst*snd;
+            myform.result.value=result;
+            }
+            function divide(){
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst/snd;
+            myform.result.value=result;
+            }
+            function set_time(){
+                var interval=parseInt(document.getElementById('time').value);
+                setInterval(slideshow,interval);
+            }
+            
+            function slideshow(){
+                var image;
+                if(start==1){
+                    image="img1.jpg";
+                }
+                
+                else if(start==2){
+                    image="img2.jpg";
+                }
+                
+                else if(start==3){
+                    image="img3.jpg";
+                }
+                
+                
+                else{
+                    start=1;
+                    image="img/img1.png";
+                }
+                document.getElementById('pic').src=""+image;
+                start++;
+            }
+        </script>
+        
+    </head>
+    <body >
+        <div class="container">
+            <div class="Gallery">
+                <div class="input">
+                    <h4>Enter Time Interval</h4>(in ms)<br><br>
+                    <input type="text" name="time" id="time"><br><br>
+                    <input type="button" value="Start" onclick="set_time()">
+                </div>
+                <div class="gallery">
+                    <img src="img1.jpg" width="300px" height="250px" id="pic"></img>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container">
+            <div class="calc">
+                <br><h1>Calculator</h1><br>
+                <form name="myform">
+                 Enter Number 1:  <input type="number" name="fst"><br><br>
+                 Enter Number 2:  <input type="number" name="snd"><br><br>
+                 <input type="button" name="" value="ADDITION" onclick="add()">
+                 <input type="button" name="" value="SUBTRACTION" onclick="subtract()">
+                 <input type="button" name="" value="DIVISION" onclick="divide()">
+                 <input type="button" name="" value="MULTIPLICATION" onclick="multiply()"><br><br>
+                 <input type="text" name="result">
+                </form>
+            </div>
+            
+        </div>
+        <div class="container ">
+            <h3>Enter Your Email Id To Validate it</h3><br>
+            <input type="text" id="numb" onblur="Validate()">
+        </div>
+        
+    </body>
+</html
